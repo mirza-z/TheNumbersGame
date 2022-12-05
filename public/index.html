@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Numbers Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+</head>
+<body class="bg-blue-300 flex flex-col h-screen items-center justify-center">
+    <div id="welcome" class="bg-white p-10 text-center rounded shadow">
+        <h1 class="text-3xl mb-3">Hello to this fun game with numbers</h1>
+        <p>You can play thism if you want. OK?</p>
+        <p>Just enter your name below:</p>
+        <form id="form" class="mt-4">
+            <input id="name" class="border px-4 py-2" type="text" placeholder="Name..."/>
+            <button class="border border-blue-600 bg-blue-600 text-white px-4 py-2">Submit</button>
+        </form>
+    </div>
+
+    <div id="chat" class="hidden bg-white rounded shadow container m-10 overflow-hidden">
+        <div id="messages" class="p-4 h-64 overflow-y-auto">
+           
+        </div>
+
+        <form id="send" class="flex mt-4">
+            <input id="text" class="flex-1 border px-4 py-2 focus:outline-none focus:border-blue-600" type="number" placeholder="Enter your number..."/>
+            <button class="border border-blue-600 bg-blue-600 text-white px-4 py-2">Send</button>
+        </form>
+    </div>
+</body>
+</html>
